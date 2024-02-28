@@ -18,18 +18,20 @@
     </header>
     <main>
         <section class="w-9/12 mx-auto">
-            <div id="phones_container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
-                <!-- <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div> -->
-                </div>
+            <div class="bg-slate-500 py-4 flex gap-2 px-4 mt-4">
+                <input id="search_input" type="text" placeholder="Search..." class="input w-full" />
+                <button onclick="searchBtn()" id="search_btn" class="btn btn-accent">Search</button>
+            </div>
+            <!-- loading spinner  -->
+            <div id="loading_spinner" class="hidden text-center my-40">
+                <span class="loading loading-bars loading-lg"></span>
+            </div>
+            <div id="phones_container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 mt-4">
+            </div>
+            </div>
+            </div>
+            <div class="text-center my-5">
+                <button id="show_all_btn" class="hidden btn btn-accent">Show All</button>
             </div>
         </section>
     </main>
